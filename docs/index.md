@@ -26,7 +26,7 @@ features:
   - icon: 🧰
     title: 后端技术
     details: Node.js（Express/Fastify）、MongoDB、PostgreSQL等后端技术
-    link: /posts/javascript/basics
+    link: /posts/engineering/overview
   - icon: 💡
     title: Atom系列项目
     details: Atom-Video视频分享CMS、Atom-Stats数据可视化分析平台
