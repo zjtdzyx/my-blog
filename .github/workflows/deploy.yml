@@ -1,0 +1,65 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  # 在main分支推送时触发部署
+  push:
+    branches: [main]
+  # 允许从Actions选项卡手动触发部署
+  workflow_dispatch:
+
+# 设置GITHUB_TOKEN的权限以允许部署到GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时运行一个部署工作流程
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # 构建任务
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate Screenshot
+        run: node scripts/create-screenshot.js
+
+      - name: Build
+        run: npm run docs:build
+        env:
+          VITE_BASE_PATH: "/"
+
+      - name: Configure Custom Domain
+        run: echo "zjtxzyx.xyz" > docs/.vitepress/dist/CNAME
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/.vitepress/dist
+
+  # 部署任务
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
