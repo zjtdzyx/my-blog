@@ -39,6 +39,12 @@ function example() {
 
 <ArticleFooter />
 
+<!-- 相关文章推荐 -->
+<RelatedPosts />
+
+<!-- 添加评论区 -->
+<GiscusComments />
+
 </BlogArticleLayout>
 
 <script setup>

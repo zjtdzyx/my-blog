@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { SearchPlugin } from 'vitepress-plugin-search'
+import { SitemapStream } from 'sitemap'
+import { createWriteStream } from 'node:fs'
+import { resolve } from 'node:path'
 
 const searchOptions = {
   encode: false,
@@ -17,6 +20,12 @@ const siteDescription = "前端开发工程师的个人博客和技术分享站�
 const siteDomain = "https://zjtxzyx.xyz";
 const siteAuthor = "ZYX";
 const themeColor = "#3c8cff";
+
+// 生成网站地图
+const links = []
+const sitemap = new SitemapStream({ hostname: siteDomain })
+const writeStream = createWriteStream(resolve(process.cwd(), 'docs/public/sitemap.xml'))
+sitemap.pipe(writeStream)
 
 export default defineConfig({
   title: siteName,
@@ -55,7 +64,50 @@ export default defineConfig({
     ['meta', { name: 'twitter:title', content: siteName }],
     ['meta', { name: 'twitter:description', content: siteDescription }],
     ['meta', { name: 'twitter:image', content: `${siteDomain}/logo.png` }],
+    ['link', { rel: 'sitemap', href: '/sitemap.xml' }],
   ],
+  
+  // 网站生成完成后的钩子函数
+  buildEnd: async ({ outDir }) => {
+    // 关闭网站地图流
+    sitemap.end()
+    console.log('网站地图已生成在 ' + resolve(process.cwd(), 'docs/public/sitemap.xml'))
+  },
+  
+  // 转换页面URL为网站地图条目
+  transformPageData: (pageData) => {
+    const { relativePath, frontmatter, lastUpdated } = pageData
+    
+    // 排除特定页面
+    if (frontmatter.sitemap === false) return
+
+    // 添加到网站地图链接
+    const url = relativePath.replace(/\.md$/, '')
+    if (url !== 'index') {
+      links.push({
+        url: url.startsWith('/') ? url : `/${url}`,
+        lastmod: lastUpdated,
+        // 可选的自定义优先级
+        priority: frontmatter.sitemapPriority || 0.7
+      })
+    } else {
+      // 首页使用更高的优先级
+      links.push({
+        url: '/',
+        lastmod: lastUpdated,
+        priority: 1.0
+      })
+    }
+    
+    // 将链接添加到网站地图
+    if (links.length > 0) {
+      links.forEach(link => {
+        sitemap.write(link)
+      })
+      // 清空链接数组，避免重复添加
+      links.length = 0
+    }
+  },
   
   vite: {
     optimizeDeps: {
@@ -96,6 +148,11 @@ export default defineConfig({
         text: '开源项目', 
         link: '/projects/',
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path><path d="M16 19h6"></path><path d="M19 16v6"></path></svg>'
+      },
+      { 
+        text: '文章标签', 
+        link: '/tags',
+        before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg>'
       },
       { 
         text: 'Midea实习', 

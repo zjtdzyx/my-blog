@@ -5,6 +5,7 @@
 ## 文章列表
 
 - [前端性能优化概述](/posts/performance/overview) - 前端性能优化的基本概念和方法论
+- [图片懒加载实现与优化](/posts/performance/lazy-loading) - 懒加载技术的实现原理与性能提升
 
 ## 即将推出
 
