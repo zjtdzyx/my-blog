@@ -5,6 +5,7 @@ import BlogHome from './components/BlogHome.vue'
 import BlogDirectory from './components/BlogDirectory.vue'
 import FloatingElements from './FloatingElements.vue'
 import ProjectCard from './components/ProjectCard.vue'
+import NavBarIcon from './components/NavBarIcon.vue'
 import Layout from './Layout.vue'
 
 // Element Plus 组件
@@ -20,6 +21,7 @@ export default {
     app.component('BlogDirectory', BlogDirectory)
     app.component('FloatingElements', FloatingElements)
     app.component('ProjectCard', ProjectCard)
+    app.component('NavBarIcon', NavBarIcon)
     
     // 使用Element Plus
     app.use(ElementPlus)

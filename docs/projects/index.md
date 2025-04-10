@@ -33,25 +33,6 @@ description: 我参与和开发的开源项目展示
     :progress="65"
   />
   
-  <ProjectCard
-    title="Vue UI组件库"
-    description="轻量级Vue 3组件库，提供了20+常用UI组件，支持按需引入和主题定制。使用TypeScript编写，提供完整的类型定义。"
-    imageUrl="/projects/vue-ui.png"
-    :tags="['Vue 3', 'TypeScript', 'Sass', 'Vite']"
-    demoUrl="https://github.com/zjtdzyx"
-    repoUrl="https://github.com/zjtdzyx/vue-ui-lib"
-    :progress="72"
-  />
-  
-  <ProjectCard
-    title="React数据大屏"
-    description="基于React和Echarts开发的数据可视化大屏项目，支持多种图表类型和实时数据更新。适用于监控、分析等场景。"
-    imageUrl="/projects/data-screen.png"
-    :tags="['React', 'Echarts', 'WebSocket', 'Sass']"
-    demoUrl="https://github.com/zjtdzyx"
-    repoUrl="https://github.com/zjtdzyx/react-data-screen"
-    :progress="78"
-  />
 </div>
 
 <div class="more-projects">
@@ -70,38 +51,6 @@ description: 我参与和开发的开源项目展示
       </div>
     </div>
     
-    <div class="project-item">
-      <div class="project-icon">⚙️</div>
-      <div class="project-info">
-        <h3>Node Utils</h3>
-        <p>Node.js工具集合，提供文件处理、数据校验、API请求等实用功能。</p>
-        <div class="project-links">
-          <a href="https://github.com/zjtdzyx" target="_blank">查看源码</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project-item">
-      <div class="project-icon">📊</div>
-      <div class="project-info">
-        <h3>Data Visualizer</h3>
-        <p>数据可视化工具，支持CSV、JSON数据导入和多种图表展示。</p>
-        <div class="project-links">
-          <a href="https://github.com/zjtdzyx" target="_blank">查看源码</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="project-item">
-      <div class="project-icon">🎨</div>
-      <div class="project-info">
-        <h3>CSS动画库</h3>
-        <p>轻量级CSS动画库，提供丰富的动画效果，易于集成到任何项目中。</p>
-        <div class="project-links">
-          <a href="https://github.com/zjtdzyx" target="_blank">查看源码</a>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -116,10 +65,16 @@ description: 我参与和开发的开源项目展示
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.projects-grid > * {
+  flex: 1 1 350px;
+  min-width: 0;
   max-width: 100%;
 }
 
@@ -136,13 +91,14 @@ description: 我参与和开发的开源项目展示
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .project-item {
+  flex: 1 1 280px;
   display: flex;
   padding: 1.5rem;
   border-radius: 8px;
@@ -186,19 +142,19 @@ description: 我参与和开发的开源项目展示
 
 /* 在大屏幕上使用更多列 */
 @media (min-width: 1440px) {
-  .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .projects-grid > * {
+    flex-basis: calc(25% - 1.5rem);
   }
   
-  .project-list {
-    grid-template-columns: repeat(4, 1fr);
+  .project-list > * {
+    flex-basis: calc(25% - 1.125rem);
   }
 }
 
 @media (max-width: 768px) {
-  .projects-grid,
-  .project-list {
-    grid-template-columns: 1fr;
+  .projects-grid > *,
+  .project-list > * {
+    flex-basis: 100%;
   }
 }
 </style> 

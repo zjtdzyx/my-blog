@@ -3,6 +3,7 @@
   import { onMounted, watch, ref } from 'vue'
   import { useRoute, useData } from 'vitepress'
   import FloatingElements from './FloatingElements.vue'
+  import CustomNav from './components/CustomNav.vue'
 
   const { Layout } = DefaultTheme
   const route = useRoute()
@@ -42,9 +43,31 @@
     <template #layout-top>
       <FloatingElements v-if="route.path === '/'" />
     </template>
+    <template #nav-bar-content-before>
+      <CustomNav class="custom-nav-container" />
+    </template>
   </Layout>
 </template>
 
 <style>
   /* 确保全局样式能应用 */
+  .custom-nav-container {
+    margin-left: 32px;
+  }
+  
+  /* 主导航在使用自定义导航时隐藏 */
+  .VPNavBarMenu {
+    display: none !important;
+  }
+  
+  /* 移动端样式 */
+  @media (max-width: 768px) {
+    .custom-nav-container {
+      display: none;
+    }
+    
+    .VPNavBarMenu {
+      display: flex !important;
+    }
+  }
 </style>
