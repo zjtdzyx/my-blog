@@ -24,7 +24,7 @@ export default defineConfig({
   lang: 'zh-CN',
   
   // 自定义域名配置
-  base: '/my-blog/', // 更新为当前仓库名
+  base: '/', // 自定义域名使用根路径
   
   // 页面设置
   cleanUrls: true,
