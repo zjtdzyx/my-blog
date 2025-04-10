@@ -15,8 +15,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useData, withBase } from 'vitepress'
-import { useRoute } from 'vue-router'
+import { useData, useRoute, withBase } from 'vitepress'
 
 const { theme } = useData()
 const route = useRoute()
