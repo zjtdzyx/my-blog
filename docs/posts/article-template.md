@@ -1,107 +1,50 @@
 ---
 title: 文章标题
-description: 文章描述，用于SEO和分享卡片
-date: YYYY-MM-DD
+description: 文章简短描述，用于SEO和社交媒体分享卡片
+date: 2023-05-01
+author: ZYX
 tags:
-  - 标签1
-  - 标签2
-  - 标签3
-head:
-  - - meta
-    - name: keywords
-      content: 关键词1,关键词2,关键词3
-  - - meta
-    - name: author
-      content: ZYX
+  - JavaScript
+  - Vue
+  - 前端开发
+# 使用自定义布局组件
+layout: doc
 ---
 
-# 文章标题
+<BlogArticleLayout>
 
-<div class="article-meta">
-  <div class="meta-item">
-    <span class="meta-icon">📅</span>
-    <span class="meta-text">发布于: {{ $frontmatter.date }}</span>
-  </div>
-  <div class="meta-item">
-    <span class="meta-icon">🏷️</span>
-    <span class="meta-text">
-      标签: 
-      <span 
-        v-for="tag in $frontmatter.tags" 
-        :key="tag" 
-        class="article-tag"
-      >{{ tag }}</span>
-    </span>
-  </div>
-</div>
+# {{ $frontmatter.title }}
 
-## 概述
+<!-- 这里是文章正文内容 -->
+在这里撰写您的文章内容。Markdown格式支持各种格式化选项：
 
-在这里介绍文章的主要内容和目的。这部分应该简洁明了，让读者快速了解文章要讲什么。
+## 二级标题
 
-## 主要内容
+### 三级标题
 
-这里是文章的主体部分，可以包含多个小节。
-
-### 小节一
-
-内容...
-
-### 小节二
-
-内容...
-
-## 代码示例
+- 列表项1
+- 列表项2
+- 列表项3
 
 ```js
-// 这里是代码示例
+// 代码示例
 function example() {
-  console.log('Hello, World!');
+  console.log('这是一个代码示例');
 }
-
-example();
 ```
 
-## 图片展示
+## 另一个章节
 
-<!-- 
-实际使用时请替换为真实图片路径
-![图片描述](/path/to/image.jpg)
--->
-
-## 总结
-
-总结文章的主要观点和结论。
+文章的更多内容...
 
 <ArticleFooter />
 
-<style scoped>
-.article-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: var(--vp-c-bg-soft);
-}
+</BlogArticleLayout>
 
-.meta-item {
-  display: flex;
-  align-items: center;
-}
+<script setup>
+// 这里可以添加特定于文章的自定义逻辑
+</script>
 
-.meta-icon {
-  margin-right: 0.5rem;
-}
-
-.article-tag {
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  margin: 0 0.25rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  background-color: var(--vp-c-brand-dimm);
-  color: var(--vp-c-brand-dark);
-}
+<style>
+/* 这里可以添加特定于文章的样式 */
 </style> 
