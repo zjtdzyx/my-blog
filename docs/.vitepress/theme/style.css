@@ -353,26 +353,14 @@ body {
   color: var(--vp-c-brand);
 }
 
-/* 导航图标样式 */
-.VPNavBarMenuLink .icon,
-.VPNavBarMenuGroup .icon {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-right: 8px;
-  margin-top: -2px;
-}
-
-.VPNavBarMenuLink .icon svg,
-.VPNavBarMenuGroup .icon svg {
+/* VitePress导航图标样式 */
+.VPNavBarMenuLink svg,
+.VPNavScreenMenuLink svg {
+  display: inline-block;
+  margin-right: 6px;
   width: 16px;
   height: 16px;
-}
-
-/* 为导航按钮添加悬停效果 */
-.VPNavBarMenuLink:hover .icon svg,
-.VPNavBarMenuGroup:hover .icon svg {
-  stroke: var(--vp-c-brand);
-  transition: stroke 0.2s ease;
+  vertical-align: middle;
 }
 
 /* 项目卡片美化 */
