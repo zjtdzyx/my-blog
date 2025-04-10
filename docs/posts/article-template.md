@@ -70,6 +70,8 @@ example();
 
 总结文章的主要观点和结论。
 
+<ArticleFooter />
+
 <style scoped>
 .article-meta {
   display: flex;

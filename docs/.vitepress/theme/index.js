@@ -5,6 +5,8 @@ import BlogHome from './components/BlogHome.vue'
 import BlogDirectory from './components/BlogDirectory.vue'
 import FloatingElements from './FloatingElements.vue'
 import ProjectCard from './components/ProjectCard.vue'
+import SponsorButton from './components/SponsorButton.vue'
+import ArticleFooter from './components/ArticleFooter.vue'
 import Layout from './Layout.vue'
 
 // Element Plus 组件
@@ -21,6 +23,8 @@ export default {
     app.component('BlogDirectory', BlogDirectory)
     app.component('FloatingElements', FloatingElements)
     app.component('ProjectCard', ProjectCard)
+    app.component('SponsorButton', SponsorButton)
+    app.component('ArticleFooter', ArticleFooter)
     
     // 使用Element Plus
     app.use(ElementPlus)
