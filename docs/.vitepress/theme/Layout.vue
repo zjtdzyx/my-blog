@@ -3,6 +3,7 @@
   import { onMounted, watch, ref } from 'vue'
   import { useRoute, useData } from 'vitepress'
   import FloatingElements from './FloatingElements.vue'
+  import ScrollFeatures from './ScrollFeatures.vue'
 
   const { Layout } = DefaultTheme
   const route = useRoute()
@@ -43,6 +44,9 @@
       <FloatingElements v-if="route.path === '/'" />
     </template>
   </Layout>
+  
+  <!-- 添加滚动功能组件 -->
+  <ScrollFeatures />
 </template>
 
 <style>

@@ -7,6 +7,7 @@ import FloatingElements from './FloatingElements.vue'
 import ProjectCard from './components/ProjectCard.vue'
 import SponsorButton from './components/SponsorButton.vue'
 import ArticleFooter from './components/ArticleFooter.vue'
+import ScrollFeatures from './components/ScrollFeatures.vue'
 import Layout from './Layout.vue'
 
 // Element Plus 组件
@@ -25,6 +26,7 @@ export default {
     app.component('ProjectCard', ProjectCard)
     app.component('SponsorButton', SponsorButton)
     app.component('ArticleFooter', ArticleFooter)
+    app.component('ScrollFeatures', ScrollFeatures)
     
     // 使用Element Plus
     app.use(ElementPlus)
