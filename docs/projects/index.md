@@ -16,7 +16,7 @@ description: 我参与和开发的开源项目展示
   <ProjectCard
     title="Atom-Video"
     description="一个基于Vue 3和Node.js的视频分享平台，支持视频上传、分类、播放和评论功能。使用Element Plus作为UI框架，MongoDB作为数据库。"
-    imageUrl="/projects/atom-video.png"
+    imageUrl="/projects/atom-video.svg"
     :tags="['Vue 3', 'Node.js', 'MongoDB', 'Element Plus']"
     demoUrl="https://github.com/zjtdzyx"
     repoUrl="https://github.com/zjtdzyx/atom-video"
@@ -26,7 +26,7 @@ description: 我参与和开发的开源项目展示
   <ProjectCard
     title="Atom-Stats"
     description="数据可视化分析平台，使用React、Echarts和TailwindCSS搭建。支持多种数据源导入，可视化图表生成和数据分析功能。"
-    imageUrl="/projects/atom-stats.png"
+    imageUrl="/projects/atom-stats.svg"
     :tags="['React', 'Echarts', 'TailwindCSS', 'TypeScript']"
     demoUrl="https://github.com/zjtdzyx"
     repoUrl="https://github.com/zjtdzyx/atom-stats"

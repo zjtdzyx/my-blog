@@ -1,0 +1,57 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f0f5fe"/>
+  <rect x="0" y="0" width="800" height="70" fill="#4a5568"/>
+  <text x="30" y="45" font-family="Arial" font-size="26" fill="white">项目仪表盘</text>
+  
+  <!-- 顶部导航 -->
+  <rect x="640" y="15" width="140" height="40" rx="5" fill="#4299e1"/>
+  <text x="665" y="42" font-family="Arial" font-size="18" fill="white">用户: Admin</text>
+  
+  <!-- 统计卡片区域 -->
+  <rect x="30" y="90" width="170" height="90" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="45" y="120" font-family="Arial" font-size="16" fill="#2d3748">总访问量</text>
+  <text x="45" y="150" font-family="Arial" font-size="24" font-weight="bold" fill="#4a5568">127,358</text>
+  
+  <rect x="220" y="90" width="170" height="90" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="235" y="120" font-family="Arial" font-size="16" fill="#2d3748">月活用户</text>
+  <text x="235" y="150" font-family="Arial" font-size="24" font-weight="bold" fill="#4a5568">9,274</text>
+  
+  <rect x="410" y="90" width="170" height="90" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="425" y="120" font-family="Arial" font-size="16" fill="#2d3748">平均停留</text>
+  <text x="425" y="150" font-family="Arial" font-size="24" font-weight="bold" fill="#4a5568">5.2分钟</text>
+  
+  <rect x="600" y="90" width="170" height="90" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="615" y="120" font-family="Arial" font-size="16" fill="#2d3748">跳出率</text>
+  <text x="615" y="150" font-family="Arial" font-size="24" font-weight="bold" fill="#4a5568">34.7%</text>
+  
+  <!-- 主图表区域 -->
+  <rect x="30" y="200" width="510" height="230" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="50" y="230" font-family="Arial" font-size="18" fill="#4a5568">访问趋势 (最近30天)</text>
+  
+  <!-- 折线图 -->
+  <polyline points="50,380 85,360 120,370 155,350 190,340 225,355 260,330 295,320 330,340 365,310 400,290 435,300 470,280 505,270" 
+            stroke="#4299e1" fill="none" stroke-width="3"/>
+  
+  <!-- 辅助网格线 -->
+  <line x1="50" y1="300" x2="505" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="340" x2="505" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="50" y1="380" x2="505" y2="380" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- 右侧区域 -->
+  <rect x="560" y="200" width="210" height="230" rx="8" fill="white" stroke="#e2e8f0"/>
+  <text x="580" y="230" font-family="Arial" font-size="18" fill="#4a5568">访问来源</text>
+  
+  <!-- 饼图 -->
+  <circle cx="670" cy="320" r="70" fill="none" stroke="#e2e8f0"/>
+  <path d="M670,320 L670,250 A70,70 0 0,1 732,345 z" fill="#4299e1"/>
+  <path d="M670,320 L732,345 A70,70 0 0,1 650,388 z" fill="#f56565"/>
+  <path d="M670,320 L650,388 A70,70 0 0,1 605,305 z" fill="#48bb78"/>
+  <path d="M670,320 L605,305 A70,70 0 0,1 670,250 z" fill="#ecc94b"/>
+  
+  <!-- 图例 -->
+  <rect x="580" y="400" width="15" height="15" fill="#4299e1"/>
+  <text x="605" y="413" font-family="Arial" font-size="14" fill="#4a5568">搜索 (42%)</text>
+  
+  <rect x="680" y="400" width="15" height="15" fill="#f56565"/>
+  <text x="705" y="413" font-family="Arial" font-size="14" fill="#4a5568">直接 (30%)</text>
+</svg> 

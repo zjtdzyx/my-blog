@@ -57,21 +57,21 @@
 
 <div class="lazy-demo">
   <LazyImage 
-    src="/projects/video.png" 
+    src="/projects/atom-video.svg" 
     alt="项目截图1" 
     width="800" 
     height="450" 
   />
 
   <LazyImage 
-    src="/projects/stats.png" 
+    src="/projects/atom-stats.svg" 
     alt="项目截图2" 
     width="800" 
     height="450" 
   />
 
   <LazyImage 
-    src="/projects/dashboard.png" 
+    src="/projects/dashboard.svg" 
     alt="项目截图3" 
     width="800" 
     height="450" 
