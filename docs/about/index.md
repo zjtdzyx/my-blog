@@ -104,6 +104,10 @@
 - GitHub: [@zjtdzyx](https://github.com/zjtdzyx)
 - 邮箱: [yuxiangzhang040727@gmail.com](mailto:yuxiangzhang040727@gmail.com)
 
+## 🎨 个性化设置
+
+<ThemeSwitcher />
+
 ---
 
 <div class="sponsor-section">

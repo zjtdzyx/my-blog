@@ -65,6 +65,17 @@ export default defineConfig({
     ['meta', { name: 'twitter:description', content: siteDescription }],
     ['meta', { name: 'twitter:image', content: `${siteDomain}/logo.png` }],
     ['link', { rel: 'sitemap', href: '/sitemap.xml' }],
+    
+    // 百度统计代码
+    ['script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d86c1c2bb3ae3978a2eb2473b32d0f81";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `],
   ],
   
   // 网站生成完成后的钩子函数

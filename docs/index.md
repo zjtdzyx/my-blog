@@ -70,16 +70,8 @@ features:
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(
-    135deg,
-    #42d392 10%,
-    #3c8cff 100%
-  );
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #42d392 30%,
-    #3c8cff
-  );
+  --vp-home-hero-name-background: var(--vp-home-hero-name-background);
+  --vp-home-hero-image-background-image: var(--vp-home-hero-image-background-image);
   --vp-home-hero-image-filter: blur(40px);
   --content-width: 100%;
   --layout-max-width: 1440px;

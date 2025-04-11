@@ -26,6 +26,7 @@ import ProjectCard from './ProjectCard.vue'
 import SponsorButton from './SponsorButton.vue'
 import ScrollFeatures from './ScrollFeatures.vue'
 import FloatingElements from './FloatingElements.vue'
+import ThemeSwitcher from './ui/ThemeSwitcher.vue'
 
 // 通用组件
 import LazyImage from './LazyImage.vue'
@@ -56,7 +57,8 @@ export const uiComponents = {
   ProjectCard,
   SponsorButton,
   ScrollFeatures,
-  FloatingElements
+  FloatingElements,
+  ThemeSwitcher
 }
 
 export const commonComponents = {
