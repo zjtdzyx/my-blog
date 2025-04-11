@@ -240,7 +240,7 @@ export default defineConfig({
     ],
     
     footer: {
-      message: '基于 VitePress 构建',
+      message: 'Make Develop All In One!',
       copyright: `Copyright © ${new Date().getFullYear()} ZYX`
     },
     
