@@ -8,7 +8,7 @@
   --vp-c-brand-dark: #2b7ae0;
   --vp-c-brand-darker: #1a68c0;
   
-  /* 主题渐变 */
+  /* 主题渐变 - 这些变量会被index.md中的样式覆盖，但提供默认值 */
   --vp-home-hero-name-background: linear-gradient(
     135deg, 
     #42d392 10%, 

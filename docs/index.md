@@ -26,7 +26,7 @@ hero:
   text: 前端开发工程师
   tagline: Midea实习生 | Atom组织领导者 | 全栈开发爱好者
   image:
-    src: /avatar.png
+    src: /avatar.svg
     alt: ZYX
   actions:
     - theme: brand
@@ -70,8 +70,16 @@ features:
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: var(--vp-home-hero-name-background);
-  --vp-home-hero-image-background-image: var(--vp-home-hero-image-background-image);
+  --vp-home-hero-name-background: linear-gradient(
+    135deg, 
+    #42d392 10%, 
+    #3c8cff 100%
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg, 
+    #42d392 30%, 
+    #3c8cff
+  );
   --vp-home-hero-image-filter: blur(40px);
   --content-width: 100%;
   --layout-max-width: 1440px;
@@ -79,6 +87,18 @@ features:
 
 .VPHomeHero .image {
   animation: float 6s ease-in-out infinite;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.VPHomeHero .image-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
 }
 
 .VPHomeHero .image-container::after {
