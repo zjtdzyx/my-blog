@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "docs:dev": "bun vitepress dev docs",
-    "docs:build": "bun vitepress build docs",
-    "docs:preview": "bun vitepress preview docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
