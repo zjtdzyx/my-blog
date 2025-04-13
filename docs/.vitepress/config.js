@@ -144,7 +144,7 @@ export default defineConfig({
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>'
       },
       { 
-        text: '技术博客', 
+        text: '博客', 
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>',
         items: [
           { text: 'JavaScript', link: '/posts/javascript/' },
@@ -153,6 +153,7 @@ export default defineConfig({
           { text: 'React', link: '/posts/react/' },
           { text: '前端工程化', link: '/posts/engineering/' },
           { text: '性能优化', link: '/posts/performance/' },
+          { text: 'Midea实习感悟', link: '/posts/midea/' },
         ]
       },
       { 
@@ -161,14 +162,9 @@ export default defineConfig({
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path><path d="M16 19h6"></path><path d="M19 16v6"></path></svg>'
       },
       { 
-        text: '文章标签', 
-        link: '/tags',
+        text: '友情链接', 
+        link: '/friends',
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg>'
-      },
-      { 
-        text: 'Midea实习', 
-        link: '/posts/midea/',
-        before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>'
       },
       { 
         text: '关于我', 
@@ -251,7 +247,7 @@ export default defineConfig({
     ],
     
     footer: {
-      message: 'Make Develop All In One!',
+      message: 'One Day We Will All Be Famous!',
       copyright: `Copyright © ${new Date().getFullYear()} ZYX`
     },
     

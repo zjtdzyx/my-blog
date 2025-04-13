@@ -22,7 +22,7 @@ description: 我参与和开发的开源项目展示
     repoUrl="https://github.com/zjtdzyx/atom-video"
     :progress="85"
   />
-  
+
   <ProjectCard
     title="Atom-Stats"
     description="数据可视化分析平台，使用React、Echarts和TailwindCSS搭建。支持多种数据源导入，可视化图表生成和数据分析功能。"
@@ -32,13 +32,13 @@ description: 我参与和开发的开源项目展示
     repoUrl="https://github.com/zjtdzyx/atom-stats"
     :progress="65"
   />
-  
+
 </div>
 
 <div class="more-projects">
   <h2>更多项目</h2>
   <p>我还参与了以下开源项目的贡献：</p>
-  
+
   <div class="project-list">
     <div class="project-item">
       <div class="project-icon">🔍</div>
@@ -50,7 +50,6 @@ description: 我参与和开发的开源项目展示
         </div>
       </div>
     </div>
-    
   </div>
 </div>
 
@@ -145,7 +144,7 @@ description: 我参与和开发的开源项目展示
   .projects-grid > * {
     flex-basis: calc(25% - 1.5rem);
   }
-  
+
   .project-list > * {
     flex-basis: calc(25% - 1.125rem);
   }

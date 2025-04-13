@@ -1,6 +1,6 @@
 ---
 layout: home
-title: ZYX的博客 - 前端开发者的技术分享和项目展示
+title: ZYX的博客 - 不止开发技术的分享，更有生活与远方
 description: 专注于前端技术的个人博客，分享JavaScript、Vue、React、TypeScript等技术文章和项目经验
 head:
   - - meta
@@ -24,7 +24,7 @@ head:
 hero:
   name: ZYX
   text: 前端开发工程师
-  tagline: Midea实习生 | Atom组织领导者 | 全栈开发爱好者
+  tagline: 计算机世界爱好者 | 喜欢动漫 | 希望完成Atom系列作品
   image:
     src: /avatar.png
     alt: ZYX
@@ -33,7 +33,7 @@ hero:
       text: 关于我
       link: /about/
     - theme: alt
-      text: 技术博客
+      text: 博客
       link: /posts/javascript/basics
     - theme: alt
       text: 开源项目
