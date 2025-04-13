@@ -26,7 +26,7 @@ hero:
   text: 前端开发工程师
   tagline: Midea实习生 | Atom组织领导者 | 全栈开发爱好者
   image:
-    src: /avatar.svg
+    src: /avatar.png
     alt: ZYX
   actions:
     - theme: brand
