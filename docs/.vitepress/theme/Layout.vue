@@ -2,7 +2,7 @@
   import DefaultTheme from 'vitepress/theme'
   import { onMounted, watch, ref } from 'vue'
   import { useRoute, useData } from 'vitepress'
-  import FloatingElements from './components/FloatingElements.vue'
+  import FloatingElements from './components/ui/FloatingElements.vue'
   import ScrollFeatures from './components/ScrollFeatures.vue'
 
   const { Layout } = DefaultTheme

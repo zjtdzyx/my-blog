@@ -5,7 +5,7 @@ description: 专注于前端技术的个人博客，分享JavaScript、Vue、Rea
 head:
   - - meta
     - name: keywords
-      content: 前端开发,JavaScript,Vue,React,TypeScript,CSS,前端工程化,性能优化,美的实习,个人博客
+      content: 前端开发,JavaScript,Vue,React,TypeScript,CSS,前端工程化,性能优化,实习经历,个人博客
   - - meta
     - name: author
       content: ZYX
