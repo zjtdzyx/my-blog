@@ -15,7 +15,6 @@ import components, {
 
 // 布局组件
 import Layout from './Layout.vue'
-import FloatingElements from './components/ui/FloatingElements.vue'
 
 // Element Plus 组件
 import ElementPlus from 'element-plus'
@@ -40,12 +39,6 @@ export default {
       app.component(name, component)
     })
     
-    // 为自定义布局注册组件
-    Object.entries(layoutComponents).forEach(([name, component]) => {
-      app.component(name, component)
-    })
-    
-    // 注册浮动元素组件
-    app.component('FloatingElements', FloatingElements)
+    // 不再单独注册各个类别组件，避免重复注册问题
   }
 } 

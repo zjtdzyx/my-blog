@@ -2,13 +2,13 @@
   <div class="tag-cloud">
     <h2 class="tag-cloud-title">标签云</h2>
     <div class="tag-cloud-container">
-      <router-link v-for="tag in tagList" :key="tag.name" :to="`/tags.html#${encodeURIComponent(tag.name)}`"
+      <a v-for="tag in tagList" :key="tag.name" :href="`/tags.html#${encodeURIComponent(tag.name)}`"
         class="tag-item" :style="{
           fontSize: `${getTagSize(tag.count)}rem`,
           backgroundColor: getTagColor(tag.name)
         }">
         {{ tag.name }} <span class="tag-count">{{ tag.count }}</span>
-      </router-link>
+      </a>
     </div>
   </div>
 </template>
