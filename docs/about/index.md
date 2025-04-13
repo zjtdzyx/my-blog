@@ -6,6 +6,99 @@
 
 我的目标是从初级前端开发者成长为全栈开发者，熟悉性能优化、跨端开发等技术，未来计划成为世界顶尖的前端开发工程师。
 
+<script setup>
+import { ref } from 'vue'
+import WebsiteBuildCard from '../.vitepress/theme/components/ui/WebsiteBuildCard.vue'
+import SiteStats from '../.vitepress/theme/components/ui/SiteStats.vue'
+
+// 网站建设数据
+const websiteBuilds = ref([
+  {
+    title: 'Vue.js',
+    description: '渐进式JavaScript框架，易学易用，性能出色，适用场景丰富的Web前端框架。',
+    icon: 'https://vuejs.org/images/logo.png',
+    link: 'https://vuejs.org',
+    color: '#42b883'
+  },
+  {
+    title: 'VitePress',
+    description: '基于Vite的静态站点生成器，专为构建快速、内容为中心的网站而设计。',
+    icon: 'https://vitepress.dev/vitepress-logo-mini.svg',
+    link: 'https://vitepress.dev',
+    color: '#646cff'
+  },
+  {
+    title: 'TypeScript',
+    description: 'JavaScript的超集，添加了静态类型定义，提高代码质量和可维护性。',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    link: 'https://www.typescriptlang.org',
+    color: '#3178c6'
+  },
+  {
+    title: 'Tailwind CSS',
+    description: '功能类优先的CSS框架，用于快速构建定制用户界面。',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    link: 'https://tailwindcss.com',
+    color: '#38bdf8'
+  }
+])
+
+// 网站统计数据
+const statsData = {
+  creationDate: '2025-04-10', // 网站创建日期
+  lastDeployDate: '2025-04-19' // 最后部署日期
+}
+</script>
+
+## 本站技术栈
+
+<div class="website-build-section">
+  <p class="section-description">本站使用了以下主流技术和框架进行构建，打造高性能、美观的现代化博客。</p>
+  
+  <div class="website-build-grid">
+    <WebsiteBuildCard
+      v-for="build in websiteBuilds"
+      :key="build.title"
+      v-bind="build"
+    />
+  </div>
+</div>
+
+## 网站数据统计
+
+<SiteStats
+  :creation-date="statsData.creationDate"
+  :last-deploy-date="statsData.lastDeployDate"
+/>
+
+<style>
+.website-build-section {
+  margin: 2rem 0 3rem;
+  position: relative;
+}
+
+.section-description {
+  text-align: center;
+  color: var(--vp-c-text-2);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.website-build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .website-build-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
 ## 技术栈
 
 ### 前端技术
