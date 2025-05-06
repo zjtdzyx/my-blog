@@ -18,6 +18,18 @@
       category: 'engineering',
       link: '/posts/engineering/monorepo'
     },
+    {
+      title: '【API 风格入门】REST、GraphQL、tRPC 到底怎么选？',
+      date: '2025-05-06',
+      category: 'engineering',
+      link: '/posts/engineering/api_style'
+    },
+    {
+      title: 'Midea实习体验与成长',
+      date: '2025-05-06',
+      category: 'midea',
+      link: '/posts/midea/experience'
+    },
 
   ])
 
