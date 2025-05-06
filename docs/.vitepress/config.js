@@ -153,7 +153,7 @@ export default defineConfig({
           { text: 'React', link: '/posts/react/' },
           { text: '前端工程化', link: '/posts/engineering/' },
           { text: '性能优化', link: '/posts/performance/' },
-          { text: 'Midea实习感悟', link: '/posts/midea/' },
+          { text: 'Midea实习', link: '/posts/midea/' },
         ]
       },
       { 
@@ -211,6 +211,7 @@ export default defineConfig({
           text: '前端工程化',
           items: [
             { text: '前端工程化概述', link: '/posts/engineering/overview' },
+            { text: 'Monorepo的应用', link: '/posts/engineering/monorepo' },
           ]
         }
       ],

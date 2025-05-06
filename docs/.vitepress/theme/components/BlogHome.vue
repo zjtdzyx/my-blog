@@ -13,23 +13,12 @@
   // 最近更新文章
   const recentPosts = ref([
     {
-      title: 'JavaScript基础知识总结',
-      date: '2023-04-02',
-      category: 'JavaScript',
-      link: '/posts/javascript/basics'
+      title: 'monorepo在Atom Video项目中的应用',
+      date: '2025-05-06',
+      category: 'engineering',
+      link: '/posts/engineering/monorepo'
     },
-    {
-      title: 'TypeScript基础类型介绍',
-      date: '2023-03-28',
-      category: 'TypeScript',
-      link: '/posts/typescript/basics'
-    },
-    {
-      title: 'Vue组件设计模式',
-      date: '2023-03-15',
-      category: 'Vue',
-      link: '/posts/vue/basics'
-    }
+
   ])
 
   // 博客标签
