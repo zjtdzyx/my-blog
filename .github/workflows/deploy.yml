@@ -39,9 +39,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Generate Screenshot
-        run: node scripts/create-screenshot.js
-
       - name: Build
         run: npm run docs:build
         env:
