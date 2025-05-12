@@ -1,7 +1,5 @@
 # Atom-Stats
 
-![Atom-Stats Logo](./public/stats-icon.svg)
-
 Atom-Stats 是一个专业的代码统计分析工具，作为 Atom 系列产品的重要组成部分，致力于帮助开发者和团队更好地理解和管理代码库。
 
 ## ✨ 特性
@@ -70,7 +68,7 @@ Atom-Stats 是一个专业的代码统计分析工具，作为 Atom 系列产品
 
 ```bash
 # 克隆项目
-git clone https://github.com/atom-dev/atom-stats.git
+git clone https://github.com/FightingTrip/atom-stats.git
 
 # 安装依赖
 cd atom-stats
