@@ -5,33 +5,37 @@ description: 我参与和开发的开源项目展示
 
 # 开源项目
 
-<div class="projects-header">
-  <div class="header-content">
-    <h2>我的开源贡献</h2>
-    <p>这里展示了我最近参与和开发的一些开源项目，涵盖了前端开发的各个领域。</p>
-  </div>
-</div>
+
 
 <div class="projects-grid">
   <ProjectCard
     title="Atom-Video"
-    description="一个基于Vue 3和Node.js的视频分享平台，支持视频上传、分类、播放和评论功能。使用Element Plus作为UI框架，MongoDB作为数据库。"
-    imageUrl="/projects/atom-video.svg"
-    :tags="['Vue 3', 'Node.js', 'MongoDB', 'Element Plus']"
+    description="一款面向开发者的视频分享平台。"
+    imageUrl="/projects/Atom-Video.png"
+    :tags="['Vue 3','Tailwind CSS','TypeScript', 'NestJS', 'Postgresql', 'Native UI']"
     demoUrl="https://github.com/zjtdzyx"
-    repoUrl="https://github.com/zjtdzyx/atom-video"
-    :progress="85"
+    repoUrl="https://github.com/FrightingTrip/atom-video"
+    :progress="60"
   />
 
   <ProjectCard
-    title="Atom-Stats"
-    description="数据可视化分析平台，使用React、Echarts和TailwindCSS搭建。支持多种数据源导入，可视化图表生成和数据分析功能。"
-    imageUrl="/projects/atom-stats.svg"
-    :tags="['React', 'Echarts', 'TailwindCSS', 'TypeScript']"
+    title="Atom-Nexus"
+    description="去中心化数字身份验证平台。"
+    imageUrl="/projects/Atom Nexus Logo.png"
+    :tags="['Vue 3','UnoCSS','TypeScript', 'NestJS', 'Postgresql', 'Native UI']"
     demoUrl="https://github.com/zjtdzyx"
     repoUrl="https://github.com/zjtdzyx/atom-stats"
-    :progress="65"
+    :progress="80"
   />
+    <!-- <ProjectCard
+    title="Atom-Stats"
+    description="代码质量分析可视化工具。"
+    imageUrl="/projects/Atom Nexus Logo.png"
+    :tags="['React','Tailwind','TypeScript', 'Rechart']"
+    demoUrl="https://github.com/zjtdzyx"
+    repoUrl="https://github.com/zjtdzyx/atom-stats"
+    :progress="30"
+  /> -->
 
 </div>
 
@@ -43,8 +47,8 @@ description: 我参与和开发的开源项目展示
     <div class="project-item">
       <div class="project-icon">🔍</div>
       <div class="project-info">
-        <h3>Search-UI</h3>
-        <p>轻量级搜索UI组件，支持多种搜索模式和自定义样式。</p>
+        <h3>XXX</h3>
+        <p>XXX</p>
         <div class="project-links">
           <a href="https://github.com/zjtdzyx" target="_blank">查看源码</a>
         </div>

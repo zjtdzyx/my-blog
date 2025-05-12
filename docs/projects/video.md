@@ -1,270 +1,372 @@
-# Atom-Video
+# Atom Video  
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/FightingTrip/atom-video)
 
-::: info
-Atom-Video是一个面向开发者的视频分享CMS，专注于代码教程和技术分享内容的管理与展示。
-:::
+一个面向开发者的视频技术分享与学习平台，采用 Monorepo 架构，使用 Vue 3、TypeScript 和 NestJS 构建。
 
 ## 项目概述
 
-**GitHub仓库**: [https://github.com/FightingTrip/atom-video](https://github.com/FightingTrip/atom-video)
+Atom Video是一个现代化的视频分享平台，为用户提供高质量的视频内容服务。平台采用前后端分离架构，使用最新的Web技术栈，提供流畅、易用且功能丰富的视频观看和分享体验。
 
-**在线预览**: [https://atom-video.vercel.app](https://atom-video.vercel.app)
+### 核心特性
 
-Atom-Video致力于为开发者提供一个专业的视频教程分享平台，解决传统视频平台对开发者内容支持不足的问题。通过集成代码展示、交互式时间轴和智能章节标记等功能，大幅提升了技术视频的学习体验。
+- 🎥 高质量视频分享与观看
+- 👥 活跃的用户社区与互动系统
+- 📋 强大的播放列表管理功能
+- 🔍 智能内容推荐与搜索
+- 🌐 多语言国际化支持
+- 🎨 现代化 UI/UX 设计
+- ⚡ 高性能与可扩展性架构
+- 🔒 完善的用户认证与授权
+- 📱 全面响应式设计
+- 🌙 深色/亮色主题切换
+- ♿ 无障碍支持
+- 🔄 实时互动更新
 
-## 核心功能
-
-### 视频内容管理
-
-- **多格式视频支持**: 支持MP4、WebM、AV1等多种视频格式
-- **自动转码处理**: 使用FFmpeg自动转码为适合Web播放的格式
-- **云存储集成**: 支持AWS S3、七牛云、阿里云OSS等多种存储方案
-- **批量管理**: 支持批量上传、标记和分类
-
-### 代码与视频关联
-
-- **代码片段嵌入**: 在视频播放的特定时间点展示相关代码片段
-- **语法高亮**: 支持超过100种编程语言的语法高亮
-- **代码变化追踪**: 展示在教程过程中代码的演变
-- **一键复制**: 快速复制代码片段到剪贴板
-
-### 交互式时间轴
-
-- **章节标记**: 自动或手动为视频添加章节标记，便于导航
-- **内容概要**: 每个章节提供内容概要，方便快速理解
-- **智能跳转**: 基于内容相关性的智能跳转推荐
-- **笔记与书签**: 用户可以在时间轴上添加个人笔记和书签
-
-### 团队协作系统
-
-- **基于角色的权限控制**: 管理员、编辑者、贡献者等不同角色
-- **审核工作流**: 内容发布前的审核与反馈机制
-- **协作评论**: 团队成员可以对视频内容进行内部评论和讨论
-- **版本历史**: 追踪内容的修改历史和版本变更
-
-## 技术架构
-
-### 前端技术栈
-
-- **框架**: React 18 + TypeScript
-- **状态管理**: Redux Toolkit
-- **样式解决方案**: TailwindCSS + Styled Components
-- **UI组件**: 自研组件库 + HeadlessUI
-- **视频播放**: Plyr + hls.js
-- **代码展示**: CodeMirror 6 + Prism.js
-
-### 后端技术栈
-
-- **服务框架**: Node.js + Express
-- **数据库**: PostgreSQL + Redis
-- **认证**: JWT + OAuth2.0
-- **文件处理**: Multer + Sharp
-- **视频处理**: FFmpeg + WebRTC
-- **API文档**: Swagger + OpenAPI 3.0
-
-### 部署与DevOps
-
-- **容器化**: Docker + Docker Compose
-- **CI/CD**: GitHub Actions
-- **监控**: Sentry + Prometheus
-- **负载均衡**: Nginx + CloudFlare
-- **CDN**: CloudFront / Cloudflare
-
-## 系统架构图
-
-```mermaid
-graph TD
-    Client[用户浏览器] --> Frontend[前端应用]
-    Frontend --> API[API网关]
-    API --> AuthService[认证服务]
-    API --> VideoService[视频服务]
-    API --> CodeService[代码服务]
-    API --> UserService[用户服务]
-    API --> AnalyticsService[分析服务]
-    
-    VideoService --> VideoProcessor[视频处理器]
-    VideoProcessor --> VideoStorage[视频存储]
-    
-    CodeService --> GitIntegration[Git集成]
-    
-    subgraph 数据存储
-        PostgreSQL[(PostgreSQL)]
-        Redis[(Redis)]
-        ObjectStorage[(对象存储)]
-    end
-    
-    VideoService --> PostgreSQL
-    VideoService --> ObjectStorage
-    CodeService --> PostgreSQL
-    UserService --> PostgreSQL
-    UserService --> Redis
-    AnalyticsService --> PostgreSQL
-    AnalyticsService --> Redis
-```
-
-## 项目进展
+## 项目开发进度
 
 ### 已完成功能
 
-- [x] 基础视频上传与管理
-- [x] 视频播放器与自定义控制
-- [x] 代码片段关联系统
-- [x] 用户认证与基本权限
-- [x] 基础分析与统计
-- [x] 响应式设计与移动端支持
+- [x] **核心布局**
+  - [x] 响应式侧边栏（可折叠）
+  - [x] 顶部导航栏
+  - [x] 页脚组件
+  - [x] 暗色/亮色主题切换
 
-### 正在开发
+- [x] **主页功能**
+  - [x] 视频卡片列表
+  - [x] 标签分类系统
+  - [x] 无限滚动加载
+  - [x] 视频推荐算法（基础版）
 
-- [ ] 高级搜索与推荐系统
-- [ ] AI自动章节划分
-- [ ] 代码片段实时运行环境
-- [ ] 互动式问答功能
-- [ ] 完整的API文档
+- [x] **用户认证系统**
+  - [x] 登录表单与验证
+  - [x] 注册功能
+  - [x] 社交账号登录（Google, GitHub）
+  - [x] 忘记密码/重置密码
+  - [x] 记住我功能
+  - [x] 基于JWT的认证
 
-### 未来规划
+- [x] **国际化支持**
+  - [x] 中文/英文切换
+  - [x] 自动检测浏览器语言
+  - [x] 用户语言偏好保存
 
-- 支持更多的视频源集成
-- 添加社区功能与用户互动
-- 开发VS Code插件，直接从编辑器创建教程
-- 支持多语言字幕与内容翻译
+- [x] **视频播放系统**
+  - [x] 视频播放器组件
+  - [x] 多清晰度切换
+  - [x] 弹幕系统
+  - [x] 快捷键控制
+  - [x] 自适应布局
+  - [x] 主题适配
+  - [x] 视频进度记忆功能
+  - [x] 画中画模式
+  - [x] 视频截图功能
 
-## 技术亮点
+- [x] **用户个人中心**
+  - [x] 用户资料展示
+  - [x] 用户上传的视频列表
+  - [x] 关注/取消关注功能
+  - [x] 无限滚动加载
+  - [x] 头像上传功能
+  - [x] 个人数据统计
 
-### 视频流优化
+- [x] **视频互动系统**
+  - [x] 评论功能（支持嵌套评论）
+  - [x] 点赞/取消点赞功能
+  - [x] 收藏功能
+  - [x] 分享功能（链接、社交媒体）
+  - [x] 视频举报功能
 
-我们针对视频教程的特殊需求，开发了自适应比特率流媒体解决方案:
+- [x] **播放列表系统**
+  - [x] 播放列表创建与管理
+  - [x] 视频添加/移除
+  - [x] 播放列表权限控制（公开/私有/未上市）
+  - [x] 播放列表分享
+  - [x] 视频排序功能
+  - [x] 播放列表封面设置
 
-```javascript
-// videoProcessor.js
-class AdaptiveStreamProcessor {
-  constructor(videoPath, outputDir) {
-    this.videoPath = videoPath;
-    this.outputDir = outputDir;
-    this.ffmpeg = require('fluent-ffmpeg');
-  }
+- [x] **后端模块化架构**
+  - [x] 认证模块 (auth)
+  - [x] 用户模块 (user)
+  - [x] 视频模块 (video)
+  - [x] 标签模块 (tag)
+  - [x] 搜索模块 (search)
+  - [x] 评论模块 (comment)
+  - [x] 收藏模块 (favorite)
+  - [x] 订阅模块 (subscription)
+  - [x] 互动模块 (interaction)
+  - [x] 播放列表模块 (playlist)
+  - [x] 通用模块 (common)
 
-  async generateHLS() {
-    return new Promise((resolve, reject) => {
-      this.ffmpeg(this.videoPath)
-        .outputOptions([
-          '-profile:v main',
-          '-sc_threshold 0',
-          '-g 48',
-          '-keyint_min 48',
-          // 生成多种分辨率的视频流
-          '-map 0:v',
-          '-map 0:v',
-          '-map 0:v',
-          '-map 0:a',
-          // 240p
-          '-s:v:0 426x240',
-          '-c:v:0 libx264',
-          '-b:v:0 400k',
-          // 480p
-          '-s:v:1 854x480',
-          '-c:v:1 libx264',
-          '-b:v:1 1400k',
-          // 720p
-          '-s:v:2 1280x720',
-          '-c:v:2 libx264',
-          '-b:v:2 2800k',
-          // 音频设置
-          '-c:a aac',
-          '-b:a 128k',
-          // HLS设置
-          '-f hls',
-          '-hls_time 4',
-          '-hls_playlist_type vod',
-          '-hls_segment_filename',
-          `${this.outputDir}/segment_%v_%03d.ts`,
-          '-master_pl_name master.m3u8',
-          '-var_stream_map', 'v:0,a:0 v:1,a:0 v:2,a:0'
-        ])
-        .output(`${this.outputDir}/stream_%v.m3u8`)
-        .on('end', resolve)
-        .on('error', reject)
-        .run();
-    });
-  }
-}
+### 进行中功能
 
-module.exports = AdaptiveStreamProcessor;
+- [ ] **搜索增强系统**
+  - [x] 基础搜索功能
+  - [ ] 高级过滤选项
+  - [ ] 搜索建议和自动完成
+  - [ ] 搜索历史记录
+
+- [ ] **用户通知系统**
+  - [ ] 实时通知
+  - [ ] 通知中心
+  - [ ] 通知偏好设置
+  - [ ] 邮件通知集成
+
+- [ ] **用户设置中心**
+  - [x] 个人资料编辑
+  - [x] 账号安全设置
+  - [ ] 通知设置
+  - [ ] 隐私设置
+  - [ ] 个性化推荐设置
+
+- [ ] **创作者数据分析**
+  - [ ] 视频数据统计
+  - [ ] 观众数据分析
+  - [ ] 互动数据报表
+  - [ ] 自定义数据导出
+
+## 技术架构
+
+Atom Video采用Monorepo架构设计，使用pnpm workspaces + Lerna管理多个相关包，支持代码共享、统一版本控制，并简化了协作流程。
+
+### 前端技术栈
+- **核心框架**: Vue 3.4.15 + TypeScript
+- **构建工具**: Vite
+- **状态管理**: Pinia
+- **路由**: Vue Router
+- **UI组件库**: Naive UI
+- **CSS框架**: Tailwind CSS
+- **HTTP客户端**: Axios
+- **测试**: Vitest
+
+### 后端技术栈
+- **框架**: Express.js + TypeScript
+- **数据库**: PostgreSQL
+- **ORM**: Prisma
+- **缓存**: Redis
+- **认证**: JWT
+- **文档**: Swagger/OpenAPI
+
+### 开发工具
+- **包管理器**: pnpm 8.15.4
+- **代码规范**: ESLint + Prettier
+- **测试框架**: Jest/Vitest
+- **CI/CD**: GitHub Actions
+- **容器化**: Docker
+
+## 快速开始
+
+### 环境要求
+
+- Node.js v18.0.0+
+- pnpm v8.15.4+
+- PostgreSQL v14.0.0+
+- Redis v6.0.0+
+
+### 安装步骤
+
+1. 克隆仓库
+```bash
+git clone https://github.com/FightingTrip/atom-video.git
+cd atom-video
 ```
 
-### 代码同步系统
-
-我们开发了时间轴与代码同步系统，实现了视频播放进度与代码展示的精确同步:
-
-```typescript
-// CodeSyncManager.tsx
-interface CodeSegment {
-  id: string;
-  filename: string;
-  language: string;
-  code: string;
-  startTime: number;
-  endTime: number;
-  description?: string;
-}
-
-const CodeSyncManager: React.FC<{
-  videoTime: number;
-  codeSegments: CodeSegment[];
-}> = ({ videoTime, codeSegments }) => {
-  const [activeSegment, setActiveSegment] = useState<CodeSegment | null>(null);
-  
-  useEffect(() => {
-    // 根据当前视频时间找到对应的代码段
-    const segment = codeSegments.find(
-      seg => videoTime >= seg.startTime && videoTime <= seg.endTime
-    ) || null;
-    
-    if (segment?.id !== activeSegment?.id) {
-      setActiveSegment(segment);
-    }
-  }, [videoTime, codeSegments, activeSegment]);
-  
-  if (!activeSegment) {
-    return <EmptyCodeView />;
-  }
-  
-  return (
-    <div className="code-sync-container">
-      <div className="code-header">
-        <span className="filename">{activeSegment.filename}</span>
-        <span className="language">{activeSegment.language}</span>
-      </div>
-      <CodeEditor
-        language={activeSegment.language}
-        value={activeSegment.code}
-        readOnly
-        highlight
-      />
-      {activeSegment.description && (
-        <div className="code-description">{activeSegment.description}</div>
-      )}
-    </div>
-  );
-};
+2. 安装依赖
+```bash
+pnpm install
 ```
 
-## 参与贡献
+3. 配置环境变量
+```bash
+# 前端环境变量
+cd frontend
+cp .env.example .env.local
 
-我们欢迎开发者参与Atom-Video项目的贡献！无论是功能开发、Bug修复、文档完善还是创意建议，都非常欢迎。
+# 后端环境变量
+cd ../backend
+cp .env.example .env
+```
 
-- **GitHub Issues**: [提交问题或建议](https://github.com/FightingTrip/atom-video/issues)
-- **Pull Requests**: [贡献代码](https://github.com/FightingTrip/atom-video/pulls)
-- **开发文档**: [查看开发文档](https://github.com/FightingTrip/atom-video/wiki)
+4. 启动开发服务器
+```bash
+# 启动所有服务
+pnpm dev
 
-## 联系方式
+# 或分别启动
+pnpm dev:frontend
+pnpm dev:backend
 
-如果您对项目有任何问题或建议，欢迎通过以下方式联系我们：
+# 以Mock模式启动前端（无需后端）
+pnpm dev:mock
+```
 
-- Email: [yuxiangzhang040727@gmail.com](mailto:yuxiangzhang040727@gmail.com)
-- GitHub: [@zjtdzyx](https://github.com/zjtdzyx)
+## 使用测试账号
 
----
+平台提供了多种测试账号，方便在开发环境中测试不同用户角色和权限：
 
-::: tip 贡献指南
-如果您想参与贡献，请先阅读我们的[贡献指南](https://github.com/FightingTrip/atom-video/blob/main/CONTRIBUTING.md)，了解代码规范和提交流程。
-::: 
+### 管理员账号
+```
+账号: admin@atomvideo.com
+密码: Admin@123
+```
+
+### 创作者账号
+```
+账号: creator@atomvideo.com
+密码: Password123
+```
+
+### 普通用户账号
+```
+账号: user@atomvideo.com
+密码: Password123
+```
+
+## 项目文档
+
+详细文档请参考 [docs](./docs) 目录：
+
+- [环境搭建指南](./docs/development/setup.md)
+- [测试账号指南](./docs/development/test-accounts.md)
+- [Git 工作流程](./docs/development/git-workflow.md)
+- [编码规范](./docs/development/coding-standards.md)
+- [API 文档](./docs/api/README.md)
+- [前端架构](./docs/technical/frontend-architecture.md)
+- [后端架构](./docs/technical/backend-architecture.md)
+- [测试指南](./docs/development/testing.md)
+- [部署指南](./docs/deployment/README.md)
+- [Monorepo开发指南](./docs/monorepo-guide.md)
+
+## 贡献指南
+
+我们欢迎所有形式的贡献，无论是新功能、bug修复还是文档改进。请查看[贡献指南](./CONTRIBUTING.md)了解更多详情。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。
+
+# Atom Video 优化功能
+
+本次更新为Atom Video视频平台添加了多项现代化功能和性能优化，提升用户体验和交互性能。
+
+## 视频播放器优化
+
+### 1. 画中画模式 (PIP)
+- 在视频播放时可切换到画中画模式，支持在浏览其他内容的同时继续观看视频
+- 通过顶部控制栏中的专用按钮访问
+
+### 2. 手势控制
+- 支持触摸设备上的手势控制：
+  - 水平滑动调整视频进度
+  - 垂直滑动调整音量
+  - 双击切换播放/暂停
+
+### 3. 视频截图功能
+- 用户可以随时截取视频当前帧并下载图片
+- 保存的截图可用于分享或归档
+
+### 4. 视频章节支持
+- 显示视频的章节列表，便于快速导航到特定内容部分
+- 章节进度可视化显示
+- 支持折叠/展开章节列表
+
+## 用户体验增强
+
+### 1. 自动播放下一个视频
+- 视频结束后自动播放推荐视频或播放队列中的下一个视频
+- 带有倒计时和预览的过渡界面
+- 用户可随时取消或跳过倒计时
+
+### 2. 视频播放队列
+- 允许用户创建自定义播放队列
+- 支持从推荐视频中快速添加到队列
+- 提供保存播放队列为永久播放列表的功能
+
+### 3. 视频质量自动调节
+- 根据网络状况自动选择最佳视频质量
+- 智能带宽检测和质量调整
+- 用户可手动选择特定质量或使用自动模式
+
+## 社交功能扩展
+
+### 1. 时间戳评论
+- 在评论中插入当前播放时间的时间戳
+- 其他用户可点击时间戳跳转到视频的特定时间点
+- 支持在评论中@提及其他用户
+
+### 2. 视频片段分享
+- 选择视频的特定片段进行分享
+- 自定义片段的开始和结束时间
+- 生成带有时间参数的分享链接
+
+### 3. 更丰富的分享选项
+- 支持多种社交平台的分享
+- 可设置分享时的起始时间点
+- 提供链接复制和二维码分享功能
+
+## 性能优化
+
+### 1. 视频预加载
+- 自动预加载下一个可能观看的视频
+- 根据网络状况和用户设置调整预加载策略
+- 显示预加载进度指示
+
+### 2. 自适应流媒体
+- 根据设备和网络条件提供最佳视频质量
+- 无缝切换不同质量级别的视频流
+- 带宽监测和反馈系统
+
+### 3. 响应式优化
+- 针对移动设备优化的触控界面
+- 改进的控件尺寸和交互区域
+- 自适应布局适配不同屏幕尺寸
+
+## 安装说明
+
+所有优化功能已集成到现有代码库中，无需额外安装步骤。
+
+## 使用方法
+
+### 画中画模式
+点击视频播放器顶部控制栏中的"画中画"按钮启用画中画模式。
+
+### 手势控制
+- 在视频上水平滑动可调整进度
+- 垂直滑动可调整音量
+- 双击视频可切换播放/暂停状态
+
+### 视频章节
+在视频播放器下方的章节面板中，点击章节标题可跳转到对应时间点。
+
+### 视频播放队列
+1. 在推荐视频上点击"+"按钮将视频添加到队列
+2. 点击"播放队列"按钮查看和管理当前队列
+3. 可以保存队列为播放列表供将来使用
+
+### 视频片段分享
+1. 点击"分享"按钮
+2. 选择"分享视频片段"
+3. 设置片段的开始和结束时间
+4. 点击"分享片段"生成链接
+
+## 实现技术
+
+- Vue 3 组合式API
+- HTML5 视频API
+- Naive UI组件库
+- 本地存储与会话管理
+- 自适应流媒体技术
+- 触摸事件处理
+- Canvas API (用于截图功能)
+
+## 兼容性
+
+- 现代浏览器 (Chrome, Firefox, Safari, Edge)
+- 移动设备 (iOS 12+, Android 8+)
+- 触摸屏和非触摸屏设备
+
+## 注意事项
+
+- 部分功能(如画中画模式)在某些浏览器中可能不可用
+- 视频预加载功能会增加数据使用量，在移动网络下可能会受到限制
+- 自动播放功能受浏览器自动播放策略影响，可能需要用户交互后才能启用

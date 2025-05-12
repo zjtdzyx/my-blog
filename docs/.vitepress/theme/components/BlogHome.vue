@@ -6,8 +6,8 @@
   const stats = ref({
     posts: 7,
     categories: 7,
-    views: 2345,
-    comments: 32
+    views:278 ,
+    comments: 0,
   })
 
   // 最近更新文章
@@ -46,12 +46,12 @@
 
   // 技能数据
   const skills = ref([
-    { name: 'JavaScript', level: 90 },
-    { name: 'Vue.js', level: 85 },
-    { name: 'React', level: 80 },
-    { name: 'TypeScript', level: 75 },
-    { name: 'Node.js', level: 70 },
-    { name: 'CSS/SCSS', level: 85 }
+    { name: 'JavaScript', level: 60 },
+    { name: 'Vue.js', level: 60 },
+    { name: 'React', level: 50 },
+    { name: 'TypeScript', level: 60 },
+    { name: 'Node.js', level: 40 },
+    { name: 'CSS/SCSS', level: 40 }
   ])
 
   // 精选推荐
@@ -63,10 +63,10 @@
       type: 'article'
     },
     {
-      title: 'Atom-Video 视频分享平台',
-      desc: '基于Vue 3和Node.js的全栈项目案例分析',
-      link: '/projects/video',
-      type: 'project'
+      title: 'monorepo在atom-video中的应用',
+      desc: '以atom-video为示例进行monorepo代码管理方式的分析',
+      link: '/posts/engineering/monorepo',
+      type: 'article'
     },
     {
       title: '前端性能优化实践指南',
