@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "ZYX的博客",
+    "home_page_url": "https://zjtxzyx.xyz",
+    "feed_url": "https://zjtxzyx.xyz/feed.json",
+    "description": "前端开发工程师的个人博客和技术分享站点",
+    "icon": "https://zjtxzyx.xyz/logo.png",
+    "author": {
+        "name": "ZYX",
+        "url": "https://zjtxzyx.xyz"
+    },
+    "items": []
+}

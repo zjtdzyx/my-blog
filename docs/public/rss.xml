@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ZYX的博客</title>
+        <link>https://zjtxzyx.xyz</link>
+        <description>前端开发工程师的个人博客和技术分享站点</description>
+        <lastBuildDate>Mon, 12 May 2025 02:44:08 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-CN</language>
+        <image>
+            <title>ZYX的博客</title>
+            <url>https://zjtxzyx.xyz/logo.png</url>
+            <link>https://zjtxzyx.xyz</link>
+        </image>
+        <copyright>Copyright © 2025 ZYX</copyright>
+        <atom:link href="https://zjtxzyx.xyz/rss.xml" rel="self" type="application/rss+xml"/>
+    </channel>
+</rss>

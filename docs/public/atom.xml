@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zjtxzyx.xyz</id>
+    <title>ZYX的博客</title>
+    <updated>2025-05-12T02:44:08.106Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>ZYX</name>
+        <email>your-email@example.com</email>
+        <uri>https://zjtxzyx.xyz</uri>
+    </author>
+    <link rel="alternate" href="https://zjtxzyx.xyz"/>
+    <link rel="self" href="https://zjtxzyx.xyz/atom.xml"/>
+    <subtitle>前端开发工程师的个人博客和技术分享站点</subtitle>
+    <logo>https://zjtxzyx.xyz/logo.png</logo>
+    <icon>https://zjtxzyx.xyz/favicon.ico</icon>
+    <rights>Copyright © 2025 ZYX</rights>
+</feed>

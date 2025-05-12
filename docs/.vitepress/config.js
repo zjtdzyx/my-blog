@@ -3,6 +3,7 @@ import { SearchPlugin } from 'vitepress-plugin-search'
 import { SitemapStream } from 'sitemap'
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
+import { generateRSSFeed } from './rss'
 
 const searchOptions = {
   encode: false,
@@ -46,6 +47,11 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap', rel: 'stylesheet' }],
     
+    // RSS feed相关
+    ['link', { rel: 'alternate', type: 'application/rss+xml', href: '/rss.xml', title: `${siteName} RSS Feed` }],
+    ['link', { rel: 'alternate', type: 'application/atom+xml', href: '/atom.xml', title: `${siteName} Atom Feed` }],
+    ['link', { rel: 'alternate', type: 'application/json', href: '/feed.json', title: `${siteName} JSON Feed` }],
+    
     // Favicon和应用图标
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/logo.png' }],
@@ -83,6 +89,9 @@ export default defineConfig({
     // 关闭网站地图流
     sitemap.end()
     console.log('网站地图已生成在 ' + resolve(process.cwd(), 'docs/public/sitemap.xml'))
+    
+    // 生成RSS feed
+    generateRSSFeed()
   },
   
   // 转换页面URL为网站地图条目
@@ -170,6 +179,11 @@ export default defineConfig({
         text: '关于我', 
         link: '/about/',
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="10" r="3"></circle><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path></svg>'
+      },
+      {
+        text: 'RSS',
+        link: '/rss.xml',
+        before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>'
       }
     ],
     
