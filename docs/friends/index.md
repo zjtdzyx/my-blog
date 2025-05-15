@@ -15,17 +15,25 @@ const friends = ref([
     name: 'zyx',
     avatar: '/avatar.png',
     description: '前端开发工程师，希望成为一名顶级的工程师。热爱动漫与生活！',
-    link: 'https://zjtxzyx.xyz',
+    link: 'https://zjtdzyx.xyz',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
   },
   {
     name: 'zephyrl',
-    avatar: '../public/icons/zephyrlin.png',
+    avatar: '/zephyrlin.png',
     description: 'zephyr的next.js个人网站',
     link: 'https://zephyrlin.me',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
+  },
+   {
+    name: 'Keldos',
+    avatar: '/Keldos.png',
+    description: '浙大的前辈。typora-latex-theme的开创者。一位UI/UX上颇具造诣的人！',
+    link: 'https://blog.keldos.me/',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '生活随笔'
   }
   // 这里可以添加更多友链
 ])
