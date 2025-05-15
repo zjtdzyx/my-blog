@@ -21,7 +21,7 @@ const friends = ref([
   },
   {
     name: 'zephyrl',
-    avatar: './icons/zephyrlin.jpg',
+    avatar: '../public/icons/zephyrlin.png',
     description: 'zephyr的next.js个人网站',
     link: 'https://zephyrlin.me',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
