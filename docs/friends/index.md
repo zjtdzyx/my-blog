@@ -19,6 +19,14 @@ const friends = ref([
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
   },
+  {
+    name: 'zephyrl',
+    avatar: './icons/zephyrlin.jpg',
+    description: 'zephyr的next.js个人网站',
+    link: 'https://zephyrlin.me',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '技术博客'
+  }
   // 这里可以添加更多友链
 ])
 
