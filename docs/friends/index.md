@@ -42,6 +42,14 @@ const friends = ref([
     link: 'https://blog.keldos.me/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
+  },
+     {
+    name: 'ziwen',
+    avatar: '/ziwen.png',
+    description: '来自小红书的优秀的前端工程师！',
+    link: ' https://www.ziwen.icu/',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '技术博客'
   }
   // 这里可以添加更多友链
 ])
