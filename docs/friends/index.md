@@ -22,7 +22,7 @@ const friends = ref([
   {
     name: 'zephyrl',
     avatar: '/zephyrlin.png',
-    description: 'zephyr的next.js个人网站',
+    description: 'zephyr的next.js个人网站。腾讯工程师。',
     link: 'https://zephyrlin.me',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
@@ -30,10 +30,18 @@ const friends = ref([
    {
     name: 'Keldos',
     avatar: '/Keldos.png',
-    description: '浙大的前辈。typora-latex-theme的开创者。一位UI/UX上颇具造诣的人！',
+    description: '浙大本硕。typora-latex-theme的开创者。一位UI/UX上颇具造诣的人！',
     link: 'https://blog.keldos.me/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '生活随笔'
+  }，
+       {
+    name: 'Wafer Desu',
+    avatar: '/WaferDesu.png',
+    description: '东京大学硕士。Go语言后端工程师。',
+    link: 'https://blog.keldos.me/',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '技术博客'
   }
   // 这里可以添加更多友链
 ])
