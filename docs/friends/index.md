@@ -50,6 +50,22 @@ const friends = ref([
     link: ' https://www.ziwen.icu/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
+  },
+       {
+    name: 'lhllhllhl',
+    avatar: '/lhllhllhl.png',
+    description: 'Java后端开发工程师',
+    link: 'https://blog.csdn.net/lhllhllhl_?type=blog',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '技术博客'
+  },
+       {
+    name: 'zyp',
+    avatar: '/zyp.png',
+    description: 'Java后端开发工程师',
+    link: ' https://github.com/zyp20221/',
+    backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
+    category: '技术博客'
   }
   // 这里可以添加更多友链
 ])
