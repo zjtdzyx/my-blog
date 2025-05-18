@@ -156,13 +156,11 @@ export default defineConfig({
         text: '博客', 
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>',
         items: [
-          { text: 'JavaScript', link: '/posts/javascript/' },
-          { text: 'TypeScript', link: '/posts/typescript/' },
-          { text: 'Vue', link: '/posts/vue/' },
-          { text: 'React', link: '/posts/react/' },
+          { text: '基础知识', link: '/posts/base/' },
           { text: '前端工程化', link: '/posts/engineering/' },
           { text: '性能优化', link: '/posts/performance/' },
-          { text: 'Midea实习', link: '/posts/midea/' },
+          { text: '学习笔记', link: '/posts/studying/' },
+          { text: '实习经验', link: '/posts/experience/' },
         ]
       },
       { 
@@ -171,7 +169,7 @@ export default defineConfig({
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"></path><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path><path d="M16 19h6"></path><path d="M19 16v6"></path></svg>'
       },
       { 
-        text: '友情链接', 
+        text: '我的朋友', 
         link: '/friends/',
         before: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg>'
       },
@@ -188,35 +186,14 @@ export default defineConfig({
     ],
     
     sidebar: {
-      '/posts/javascript/': [
+      '/posts/base/': [
         {
-          text: 'JavaScript系列',
+          text: '前端基础知识',
           items: [
-            { text: 'JavaScript基础', link: '/posts/javascript/basics' },
-          ]
-        }
-      ],
-      '/posts/typescript/': [
-        {
-          text: 'TypeScript系列',
-          items: [
-            { text: 'TypeScript基础', link: '/posts/typescript/basics' },
-          ]
-        }
-      ],
-      '/posts/vue/': [
-        {
-          text: 'Vue系列',
-          items: [
-            { text: 'Vue基础', link: '/posts/vue/basics' },
-          ]
-        }
-      ],
-      '/posts/react/': [
-        {
-          text: 'React系列',
-          items: [
-            { text: '基础', link: '/posts/react/basics' },
+            { text: 'JavaScript', link: '/posts/base/javascript/' },
+            { text: 'TypeScript', link: '/posts/base/typescript/' },
+            { text: 'Vue', link: '/posts/base/vue/' },
+            { text: 'React', link: '/posts/base/react/' },
           ]
         }
       ],
@@ -235,14 +212,25 @@ export default defineConfig({
           text: '性能优化',
           items: [
             { text: '前端性能优化概述', link: '/posts/performance/overview' },
+            { text: '关键渲染路径', link: '/posts/performance/critical-rendering-path' },
+            { text: '懒加载技术', link: '/posts/performance/lazy-loading' },
           ]
         }
       ],
-      '/posts/midea/': [
+      '/posts/studying/': [
         {
-          text: 'Midea实习感悟',
+          text: '学习笔记',
           items: [
-            { text: '实习经历', link: '/posts/midea/experience' },
+            { text: '低代码平台研究报告', link: '/posts/studying/低代码平台 研究报告' },
+            { text: 'n8n研究报告', link: '/posts/studying/n8n 研究报告' },
+          ]
+        }
+      ],
+      '/posts/experience/': [
+        {
+          text: '实习经验',
+          items: [
+            { text: '实习经历', link: '/posts/experience/experience' },
           ]
         }
       ],

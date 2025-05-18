@@ -41,13 +41,14 @@ export function generateRSSFeed() {
 
   // 读取博客文章目录
   const postFolders = [
-    'docs/posts/javascript',
-    'docs/posts/typescript',
-    'docs/posts/vue',
-    'docs/posts/react',
+    'docs/posts/base/javascript',
+    'docs/posts/base/typescript',
+    'docs/posts/base/vue',
+    'docs/posts/base/react',
     'docs/posts/engineering',
     'docs/posts/performance',
-    'docs/posts/midea'
+    'docs/posts/experience',
+    'docs/posts/studying'
   ];
   
   // 存储所有文章

@@ -11,6 +11,7 @@ docs/.vitepress/cache
 .idea/
 *.sublime-*
 *.code-workspace
+.cursor/
 
 # OS
 .DS_Store

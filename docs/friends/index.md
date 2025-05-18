@@ -39,7 +39,7 @@ const friends = ref([
     name: 'Wafer Desu',
     avatar: '/WaferDesu.png',
     description: '东京大学硕士。Go语言后端工程师。',
-    link: 'https://blog.keldos.me/',
+    link: 'https://wafer233.github.io/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
   },

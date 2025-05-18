@@ -40,28 +40,28 @@ hero:
       link: /projects/
 features:
   - icon: 🚀
-    title: 前端开发
+    title: 前端基础知识
     details: Vue、React、TailwindCSS、Bootstrap等主流前端技术栈
-    link: /posts/javascript/basics
+    link: /posts/base/
   - icon: 🧰
-    title: 后端技术
-    details: Node.js（Express/Fastify）、MongoDB、PostgreSQL等后端技术
-    link: /posts/engineering/overview
+    title: 正在探索的事情
+    details: 通过n8n将AI融入应用程序、研究低代码平台......
+    link: /posts/studying/
   - icon: 💡
     title: Atom系列项目
     details: Atom-Video视频分享CMS、Atom-Stats数据可视化分析平台
     link: /projects/
   - icon: 🏢
-    title: Midea实习
-    details: 分享在美的集团的实习经历和技术成长
-    link: /posts/midea/experience
+    title: 工作经历
+    details:分享实习与工作的经历
+    link: /posts/experience
   - icon: 📚
-    title: 学习成长
+    title:关于我
     details: 记录从初级前端开发者成长为全栈开发者的历程
     link: /about/
   - icon: 🔮
-    title: 开源贡献
-    details: 积极参与开源社区，分享技术经验，提升影响力
+    title: 项目经历
+    details: 正在开发的项目与开源的参与
     link: /projects/
 ---
 
