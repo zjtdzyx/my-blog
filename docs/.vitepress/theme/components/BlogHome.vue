@@ -146,11 +146,11 @@
             <img src="/images/site/avatar.png" alt="ZYX" class="profile-avatar" />
             <div class="profile-info">
               <h3 class="profile-name">ZYX</h3>
-              <p class="profile-title">前端开发工程师 | 动漫爱好者</p>
+              <p class="profile-title">前端开发工程师 | 全栈爱好者</p>
             </div>
           </div>
           <div class="profile-bio">
-            <p>热爱前端开发，专注于Vue和React生态。目前在Midea实习，参与广汽研究所Web、企业微信、APP端的开发。同时也在思考、开发Atom系列作品。</p>
+            <p>热爱软件开发，想要成为世界顶尖的软件工程师。目前在Midea实习，参与广汽研究所Web、企业微信、APP端的开发。同时也在思考、开发Atom系列作品。</p>
           </div>
           <div class="profile-skills">
             <div class="skill-item" v-for="skill in skills" :key="skill.name">

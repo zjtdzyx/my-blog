@@ -24,7 +24,7 @@ head:
 hero:
   name: ZYX
   text: 前端开发工程师
-  tagline: 计算机世界爱好者 | 喜欢动漫 | 希望完成Atom系列作品
+  tagline: 希望可以成为一名世界顶尖的软件工程师 
   image:
     src: /images/site/avatar.png
     alt: ZYX
