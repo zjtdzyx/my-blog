@@ -24,7 +24,7 @@ export function generateRSSFeed() {
     id: siteDomain,
     link: siteDomain,
     language: 'zh-CN',
-    image: `${siteDomain}/logo.png`,
+    image: `${siteDomain}/images/site/logo.png`,
     favicon: `${siteDomain}/favicon.ico`,
     copyright: `Copyright © ${new Date().getFullYear()} ${siteAuthor}`,
     feedLinks: {

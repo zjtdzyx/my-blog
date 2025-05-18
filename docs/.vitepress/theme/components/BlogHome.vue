@@ -6,7 +6,7 @@
   const stats = ref({
     posts: 7,
     categories: 7,
-    views:278 ,
+    views: 278,
     comments: 0,
   })
 
@@ -143,7 +143,7 @@
         <!-- 个人简介卡片 -->
         <div class="profile-card">
           <div class="profile-header">
-            <img src="/avatar.png" alt="ZYX" class="profile-avatar" />
+            <img src="/images/site/avatar.png" alt="ZYX" class="profile-avatar" />
             <div class="profile-info">
               <h3 class="profile-name">ZYX</h3>
               <p class="profile-title">前端开发工程师 | 动漫爱好者</p>

@@ -26,7 +26,7 @@ hero:
   text: 前端开发工程师
   tagline: 计算机世界爱好者 | 喜欢动漫 | 希望完成Atom系列作品
   image:
-    src: /avatar.png
+    src: /images/site/avatar.png
     alt: ZYX
   actions:
     - theme: brand
@@ -53,10 +53,10 @@ features:
     link: /projects/
   - icon: 🏢
     title: 工作经历
-    details:分享实习与工作的经历
+    details: 分享实习与工作的经历
     link: /posts/experience
   - icon: 📚
-    title:关于我
+    title: 关于我
     details: 记录从初级前端开发者成长为全栈开发者的历程
     link: /about/
   - icon: 🔮

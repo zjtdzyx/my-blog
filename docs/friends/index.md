@@ -13,7 +13,7 @@ import FriendCard from '../.vitepress/theme/components/ui/FriendCard.vue'
 const friends = ref([
   {
     name: 'zyx',
-    avatar: '/avatar.png',
+    avatar: '/images/site/avatar.png',
     description: '前端开发工程师，希望成为一名顶级的工程师。热爱动漫与生活！',
     link: 'https://zjtdzyx.xyz',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -21,7 +21,7 @@ const friends = ref([
   },
   {
     name: 'zephyrl',
-    avatar: '/zephyrlin.png',
+    avatar: '/images/friends/zephyrlin.png',
     description: 'zephyr的next.js个人网站。腾讯工程师。',
     link: 'https://zephyrlin.me',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -29,7 +29,7 @@ const friends = ref([
   },
    {
     name: 'Keldos',
-    avatar: '/Keldos.png',
+    avatar: '/images/friends/Keldos.png',
     description: '浙大本硕。typora-latex-theme的开创者。一位UI/UX上颇具造诣的人！',
     link: 'https://blog.keldos.me/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -37,7 +37,7 @@ const friends = ref([
   },
     {
     name: 'Wafer Desu',
-    avatar: '/WaferDesu.png',
+    avatar: '/images/friends/WaferDesu.png',
     description: '东京大学硕士。Go语言后端工程师。',
     link: 'https://wafer233.github.io/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -45,7 +45,7 @@ const friends = ref([
   },
      {
     name: 'ziwen',
-    avatar: '/ziwen.png',
+    avatar: '/images/friends/ziwen.png',
     description: '来自小红书的优秀的前端工程师！',
     link: ' https://www.ziwen.icu/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -53,7 +53,7 @@ const friends = ref([
   },
        {
     name: 'lhllhllhl',
-    avatar: '/lhllhllhl.png',
+    avatar: '/images/friends/lhllhllhl.png',
     description: 'Java后端开发工程师',
     link: 'https://blog.csdn.net/lhllhllhl_?type=blog',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
@@ -61,7 +61,7 @@ const friends = ref([
   },
        {
     name: 'zyp',
-    avatar: '/zyp.png',
+    avatar: '/images/friends/zyp.png',
     description: 'Java后端开发工程师',
     link: ' https://github.com/zyp20221/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',

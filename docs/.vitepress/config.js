@@ -53,9 +53,9 @@ export default defineConfig({
     ['link', { rel: 'alternate', type: 'application/json', href: '/feed.json', title: `${siteName} JSON Feed` }],
     
     // Favicon和应用图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/logo.png' }],
-    ['link', { rel: 'mask-icon', href: '/logo.png', color: themeColor }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/images/site/logo.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/images/site/logo.png' }],
+    ['link', { rel: 'mask-icon', href: '/images/site/logo.png', color: themeColor }],
     
     // SEO元标签
     ['meta', { name: 'theme-color', content: themeColor }],
@@ -65,11 +65,11 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: siteName }],
     ['meta', { property: 'og:description', content: siteDescription }],
     ['meta', { property: 'og:url', content: siteDomain }],
-    ['meta', { property: 'og:image', content: `${siteDomain}/logo.png` }],
+    ['meta', { property: 'og:image', content: `${siteDomain}/images/site/logo.png` }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: siteName }],
     ['meta', { name: 'twitter:description', content: siteDescription }],
-    ['meta', { name: 'twitter:image', content: `${siteDomain}/logo.png` }],
+    ['meta', { name: 'twitter:image', content: `${siteDomain}/images/site/logo.png` }],
     ['link', { rel: 'sitemap', href: '/sitemap.xml' }],
     
     // 百度统计代码
@@ -140,7 +140,7 @@ export default defineConfig({
   
   // 内容宽度调整
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/images/site/logo.png',
     
     // 网站宽度调整
     siteWidth: '100%',

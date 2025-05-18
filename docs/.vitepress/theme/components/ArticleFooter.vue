@@ -69,7 +69,7 @@
     <div class="footer-divider"></div>
 
     <div class="footer-section author-info">
-      <img src="/avatar.png" alt="ZYX" class="author-avatar" />
+      <img src="/images/site/avatar.png" alt="ZYX" class="author-avatar" />
       <div class="author-bio">
         <h3>关于作者</h3>
         <p>前端开发工程师，热爱技术，喜欢分享。专注于Vue、React等前端技术栈，同时探索全栈开发领域。</p>
