@@ -4,6 +4,7 @@ import { SitemapStream } from 'sitemap'
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { generateRSSFeed } from './rss'
+import { locales } from './i18n'
 
 const searchOptions = {
   encode: false,
@@ -39,6 +40,20 @@ export default defineConfig({
   // 页面设置
   cleanUrls: true,
   lastUpdated: true,
+  
+  // 国际化配置
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      link: '/'
+    },
+    'en-US': {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en-US/'
+    }
+  },
   
   // SEO相关设置
   head: [

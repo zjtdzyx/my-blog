@@ -3,6 +3,8 @@ import './styles/base.css'
 import './styles/custom.css'
 import './styles/critical.css'
 import './styles/variables.css'
+import { i18n } from '../i18n'
+import LanguageSwitch from './components/LanguageSwitch.vue'
 
 // 导入所有组件
 import components, { 
@@ -30,6 +32,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // 注册全局组件
     app.use(ElementPlus)
+    app.use(i18n)
     
     // 注册所有插件
     registerPlugins(app)
@@ -40,5 +43,6 @@ export default {
     })
     
     // 不再单独注册各个类别组件，避免重复注册问题
+    app.component('LanguageSwitch', LanguageSwitch)
   }
 } 
