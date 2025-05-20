@@ -231,6 +231,7 @@ export default defineConfig({
           text: '实习经验',
           items: [
             { text: '实习经历', link: '/posts/experience/experience' },
+            { text: 'i18n国际化', link: '/posts/experience/i18n国际化' },
           ]
         }
       ],

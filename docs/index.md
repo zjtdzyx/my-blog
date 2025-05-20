@@ -33,8 +33,8 @@ hero:
       text: 关于我
       link: /about/
     - theme: alt
-      text: 博客
-      link: /posts/javascript/basics
+      text: 基础知识
+      link: /posts/base/
     - theme: alt
       text: 开源项目
       link: /projects/
