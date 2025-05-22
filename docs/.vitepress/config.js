@@ -219,6 +219,7 @@ export default defineConfig({
             { text: '前端工程化概述', link: '/posts/engineering/overview' },
             { text: 'Monorepo的应用', link: '/posts/engineering/monorepo' },
             { text: 'API设计风格梳理', link: '/posts/engineering/api_style' }, 
+            { text: 'package.json简要说明', link: '/posts/engineering/package_json' },
           ]
         }
       ],
