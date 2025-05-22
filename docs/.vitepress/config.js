@@ -258,6 +258,7 @@ export default defineConfig({
             { text: 'Atom-Video', link: '/projects/video' },
             {text: 'Atom-Nexus', link: '/projects/nexus' },
             { text: 'Atom-Stats', link: '/projects/stats' },
+            { text: '项目总结', link: '/projects/summary' },
           ]
         }
       ],

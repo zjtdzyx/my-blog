@@ -99,89 +99,15 @@ const statsData = {
 }
 </style>
 
-## 技术栈
-
-### 前端技术
-- Vue.js（Vue2/Vue3）及其生态（Vuex、Vue Router等）
-- React.js及其生态（Redux、React Router等）
-- CSS框架：TailwindCSS、Bootstrap、UnoCss
-- 构建工具：Vite、Webpack
-- 静态站点生成：VitePress、Next.js
-
-### 后端技术
-- Node.js（Express.js/Fastify框架）
-- Python（FastAPI框架）
-- 数据库：PostgreSQL、MongoDB
-- API设计与开发
-
-### 开发工具
-- 编辑器：VSCode
-- 版本控制：Git、GitHub CLI
-- 包管理：npm、yarn、bun
-- CI/CD：GitHub Actions、Jenkins
-
-
-## 项目经历
-
-### Atom系列开源项目
-自己弄着玩，想开发一套Atom系列的可商用产品：
-
-#### [Atom-Video](https://github.com/FightingTrip/atom-video)
-这是一个面向开发者的视频分享平台，提供以下功能：
-
-XXX正在开发中，敬请期待.......
-
-**技术栈**：Vue 3、TypeScript、Tailwind CSS、Naive UI、NestJS、PostgreSQL
-
-#### [Atom-Nexus](https://github.com/zjtdzyx/atom-nexus)
-去中心化数字身份验证平台：
-
-XXX正在开发中，敬请期待.......
-
-**技术栈**：Vue 3、TypeScript、UnoCSS、Naive UI、NestJS、PostgreSQL
-
-> 欢迎访问[项目页面](/projects/)了解更多详情或参与贡献！
+# 关于我
 
 
 
-## 工作经历
 
-目前在Midea进行前端开发的实习，主要参与的是广汽研究所的多端企业级后台管理系统项目，锻炼自己的业务编码能力。
 
-主要工作内容包括：
-- PC端、企业微信端、移动APP端多模块的开发与维护
-- 开发新需求、解决bug、拉通模块功能
-- 重构旧业务逻辑代码、封装与使用全局组件、编写机型适配
-- 联系顾问、后端开会讨论、解决复杂业务问题
 
-## 开源贡献
 
-- GitHub: [@zjtdzyx](https://github.com/zjtdzyx)
-- 邮箱: [yuxiangzhang040727@gmail.com](mailto:yuxiangzhang040727@gmail.com)
-- 开源项目: [Atom系列项目](/projects/)
 
-## 学习方式
-
-我通过以下方式不断提升自己的技能：
-- 参与实际项目开发，在实践中学习
-- 阅读技术文档和教程
-- 关注行业动态和前沿技术
-- 开源贡献，参与社区交流
-
-## 关注领域
-
-- 内容管理系统（CMS）设计与开发
-- Web性能优化
-- 跨端开发技术
-- 前端工程化实践
-- 开发者工具与体验提升
-
-## 联系我
-
-如果你对我的项目或者文章有任何问题，或者有合作的想法，欢迎通过以下方式联系我：
-
-- GitHub: [@zjtdzyx](https://github.com/zjtdzyx)
-- 邮箱: [yuxiangzhang040727@gmail.com](mailto:yuxiangzhang040727@gmail.com)
 
 ## 🎨 个性化设置
 
