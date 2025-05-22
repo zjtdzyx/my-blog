@@ -4,7 +4,6 @@ import { SitemapStream } from 'sitemap'
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { generateRSSFeed } from './rss'
-import { locales } from './i18n'
 
 const searchOptions = {
   encode: false,
