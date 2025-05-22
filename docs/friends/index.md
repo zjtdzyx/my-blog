@@ -46,7 +46,7 @@ const friends = ref([
      {
     name: 'ziwen',
     avatar: '/images/friends/ziwen.png',
-    description: '来自小红书的优秀的前端工程师！',
+    description: '中央民族大学。小红书前端工程师！',
     link: ' https://www.ziwen.icu/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'
@@ -62,7 +62,7 @@ const friends = ref([
        {
     name: 'zyp',
     avatar: '/images/friends/zyp.png',
-    description: 'Java后端开发工程师',
+    description: '华中农大。Java后端开发工程师',
     link: ' https://github.com/zyp20221/',
     backgroundColor: 'rgba(var(--vp-c-brand-rgb), 0.05)',
     category: '技术博客'

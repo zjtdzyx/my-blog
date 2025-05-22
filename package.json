@@ -1,17 +1,12 @@
 {
   "name": "my-blog",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "zyx的个人博客",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjtdzyx/my-vitepress-blog.git"
+  },
+  "main": "index.js",
   "devDependencies": {
     "axios": "1.8.4",
     "element-plus": "2.9.7",
@@ -26,11 +21,13 @@
     "vitepress-plugin-search": "1.0.4-alpha.22",
     "vue": "^3.5.13"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zjtdzyx/my-vitepress-blog.git"
+  "description": "zyx的个人博客",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "dependencies": {
-    "vue-i18n": "12.0.0-alpha.2"
-  }
+  "type": "module"
 }
