@@ -1,10 +1,8 @@
 # package.json简要说明
 
-：：： info
-
-本文是对package.json中重要字段的概念进行的回顾
-
-：：：
+::: info
+本文是对package.json中重要字段概念的回顾
+:::
 
 ## 1.scripts
 
@@ -106,4 +104,6 @@ http
 ```
 { "engines" : { "node" : ">=0.10.3 <0.12" } }
 ```
+## 参考资料
 
+https://juejin.cn/post/6844903645654286343
