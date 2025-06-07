@@ -7,7 +7,7 @@ outline: deep
 
 # 基础知识
 
-这个部分包含了前端开发的基础知识，涵盖了以下几个主要方面：
+<SeriesNav />
 
 ## [JavaScript](/posts/base/javascript/)
 JavaScript是前端开发的核心语言，这里包含了JavaScript的基础知识和进阶内容。
